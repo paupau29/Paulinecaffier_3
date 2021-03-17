@@ -1,0 +1,153 @@
+
+nav{
+    border-top: 1px solid grey;
+    border-bottom:1px solid grey;
+    margin-top:5%;
+    padding-bottom: 4%;
+    background-color: #eaeaea;
+    box-shadow:0 16px 0 #0000001e;
+  }
+  .reservation{   
+    margin:0% 0 10% 0;
+    padding:4% 0 15% 0;
+    background-color:$background-color;
+    @include lg{
+      padding:4% 0 3% 0;
+    }
+    @include md{
+      padding:4% 0 3% 0;
+    }
+  }
+  .restaurants{
+    background-color:$background-color;
+  }
+  footer{
+    background-color:#353535;
+    color:#ffffff;
+    padding-bottom:5%;
+    padding-top: 5%;
+    padding-top:calc($padding-top + 2%) ;
+    @include md{
+      font-size:4vw;
+    }
+    @include lg{
+      font-size:1.5vw;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+  li{
+    margin-bottom: 2%;
+  }
+
+  //*A la Française*//
+  .menu{
+    border:1px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -17%;
+    width:325px;
+    position: relative;
+    margin-left: 5%;
+    @include md{
+      width:500px;
+      margin-left: 17%;
+    }
+    @include lg{
+      width: 650px;
+    }
+  }
+  .fa-heart.grey{
+    float:right;
+    margin-right: 8%;
+    margin-top: 6.5%;
+    @include lg{
+      font-size:18px;
+      margin-top: 4.5%;
+
+    }
+  }
+  .menu_1.food{
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    padding:4%;
+    margin-bottom: 6%;
+    width:80%;
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 3vw;
+    animation: slide 10s ease-in-out;
+    @include md{
+      font-size: 2vw;
+    }
+    @include lg{
+      font-size: 1.5vw;
+    }
+  }
+  .menu_1.food:nth-child(1){
+    animation: slide 0s ease-in-out;
+  }
+  .menu_1.food:nth-child(2){
+    animation: slide 1s ease-in-out;
+  }
+  .menu_1.food:nth-child(3){
+    animation: slide 2s ease-in-out;
+  }
+  .menu_1.food:nth-child(4){
+    animation: slide 3s ease-in-out;
+  }
+  .menu_1.food:nth-child(5){
+    animation: slide 4s ease-in-out;
+  }
+  .menu_1.food:nth-child(6){
+    animation: slide 5s ease-in-out;
+  }
+  .menu_1.food:nth-child(7){
+    animation: slide 6s ease-in-out;
+  }
+  .menu_1.food:nth-child(8){
+    animation: slide 7s ease-in-out;
+  }
+  .menu_1.food:nth-child(9){
+    animation: slide 8s ease-in-out;
+  }
+  .menu_1.food:nth-child(10){
+    animation: slide 9s ease-in-out;
+  }
+  .menu_1.food strong{
+    font-size: 4vw;
+    @include md{
+      font-size: 2vw;
+    }
+    @include lg{
+      font-size: 1.5vw;
+    }
+  }
+  .menu_1.food span{
+    float: right;
+    margin-right: 2%;
+    @include md{
+      font-size: 2vw;
+    }
+    @include lg{
+      font-size: 1.5vw;
+    }
+  }
+  @keyframes slide{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
+  @-webkit-keyframes slide{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
