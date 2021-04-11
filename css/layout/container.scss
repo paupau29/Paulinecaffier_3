@@ -1,0 +1,161 @@
+.reservation
+{   
+    margin:0% 0 10% 0;
+    padding:4% 0 15% 0;
+    background-color:$background-color;
+    @include lg{
+      padding:4% 0 3% 0;
+    } 
+  }
+
+  .restaurants
+  {
+    background-color:$background-color;
+    padding-top:8%;
+    padding-bottom: 10%;
+    padding-left:0%;
+    width:100%;
+    @include md{
+      padding-left:8%;
+      width:92%;
+    }
+    @include mdlandscape{
+      padding-left:10%;
+      width:90%;
+    }
+    @include lg{
+      margin-left: 0%;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-left: 5%;
+      padding-right: 0%;
+      width:95%;
+    }
+    @include xl{
+      padding-left: 5%;
+      padding-right: 0%;
+      width:95%; 
+    }
+  }
+
+  //*A la Française*//
+
+.menu
+{
+  border:1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -17%;
+  width:373px;
+  position: relative;
+  @include md{
+    width:100%;
+  }
+  
+  @include lg{
+    width: 1000px;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+      } 
+  @include xl{
+    width:1400px;
+    margin-left: 4%;
+      }   
+  }
+  .menu_1{
+    @include lg{
+      margin-left: 4%;
+    margin-right: 0%;
+    width: 260px;
+    }
+    @include xl{
+      width: 378px;
+    }
+  }
+
+.food_all:nth-child(1)
+{
+  animation: slide 0s ease-in-out;
+}
+.food_all:nth-child(2)
+{
+  animation: slide 1s ease-in-out;
+}
+.food_all:nth-child(3)
+{
+  animation: slide 2s ease-in-out;
+}
+.food_all:nth-child(4)
+{
+  animation: slide 3s ease-in-out;
+}
+.food_all:nth-child(5)
+{
+  animation: slide 4s ease-in-out;
+}
+.food_all:nth-child(6)
+{
+  animation: slide 5s ease-in-out;
+}
+.food_all:nth-child(7)
+{
+  animation: slide 6s ease-in-out;
+}
+.food_all:nth-child(8)
+{
+  animation: slide 7s ease-in-out;
+}
+.food_all:nth-child(9)
+{
+  animation: slide 8s ease-in-out;
+}
+.food_all:nth-child(10)
+{
+  animation: slide 9s ease-in-out;
+}
+
+/**animation slides menu**/
+
+@keyframes slide
+{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes slide
+{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes slideheart
+{
+  from{
+    opacity:1;
+  }
+  to{
+    opacity:0;
+  }
+}
+
+@keyframes slideheart
+{
+  from{
+    color:black;
+  }
+  to{
+    color:transparent;
+  }
+}
+
