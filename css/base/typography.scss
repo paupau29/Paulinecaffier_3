@@ -1,0 +1,144 @@
+h1
+{
+    font-size:$font-size+2vw;
+    text-align: center;
+    font-family:'Roboto',sans-serif;
+    font-size: 5.5vw;
+    @include md{
+        font-size: 3.5vw;
+    }
+    @include lg{
+        font-size:3vw;
+    }
+}
+
+.bold
+{
+    text-align: left;
+    font-weight: bold;
+    font-size:$font-size+1vw;
+    margin-left: 7%;
+    font-size: 5vw;
+
+    @include md{
+        font-size: 3vw;
+        margin-left: 14%;
+
+    }
+    @include mdlandscape{
+        margin-left: 24%;
+    }
+    @include lg{
+        font-size: 2.5vw;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 2%;
+
+    }
+}
+
+strong
+{
+    font-size: 4vw;
+    line-height: 150%;
+    @include md{
+        font-size: 2vw;
+    }
+    @include lg{
+        font-size:1.5vw;
+    }
+}
+
+.menutitle
+{
+    text-align: left;
+    border-bottom: 1px solid #99e2d0;
+    width:12%;
+    border-bottom-width:medium;
+    padding-bottom: 3%;
+    margin-left: 7%;
+    font-size: 3.5vw;
+    color:grey;
+    @include md{
+        font-size: 2vw;
+    }
+    @include lg{
+        font-size:1.5vw;
+    }
+}
+
+.h1menu
+{
+    font-family:'shrikhand',sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    @include md{
+        font-size: 3vw;
+        margin-left: -25%;
+    }
+    @include lg{
+        font-size: 3vw;
+        margin-left: -35%;
+    }
+}
+
+.h1menubis
+{
+    margin-left: 7%;
+    margin-top:5%;
+    margin-bottom: 8%;
+    font-family:'shrikhand',sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    @include md{
+        font-size: 3vw;
+    }
+    @include lg{
+        font-size: 3vw;
+        width:100%;
+        display:inline;  
+        margin-left: 5%;
+    }   
+}
+
+h2
+{
+    text-align: center;
+    font-weight: normal;
+    font-size:4vw;
+    @include md{
+        font-size: 2.5vw;
+    }
+    @include lg{
+        font-size:2vw;
+    }
+}
+
+.menu_1.food strong
+{
+    font-size: 4vw;
+    @include md{
+      font-size: 2vw;
+    }
+    @include mdlandscape{
+        font-size: 1.5vw;
+    }
+    @include lg{
+      font-size: 1vw;
+    }
+  }
+
+  .menu_1.food span
+  {
+    float: right;
+    margin-right: 2%;
+    @include md{
+      font-size: 2vw;
+    }
+    @include mdlandscape{
+        font-size:1.5vw;
+    }
+    @include lg{
+      font-size: 1vw;
+    }
+  }

@@ -1,0 +1,266 @@
+
+.choice
+{
+    padding-bottom: 5%;
+    font-size:1.8vw;
+    margin-left: 7.5%;
+    margin-bottom: 2%;
+    width:80%;
+    -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      &:hover{
+        -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+      }
+      @include md{
+        margin-bottom: 3%;
+      }
+      @include lg{
+        margin-bottom: 0%;
+        width:60%;
+        margin-left: 20%;
+      }
+      &_proposition{
+        border: 2px solid #f6f6f6;
+        border-radius:20px;
+        padding:6% 6% 6% 11%;
+        text-align: center;
+        box-shadow:0.25rem 0.25rem 0.5rem rgb(0 0 0 /13%);
+        background-color: #f6f6f6;
+        display: block;
+        justify-content: flex-end;
+        &:hover{
+          background-color:#f5edff ;
+          border: 2px solid #f5edff;
+              }
+        &:hover .fa-mobile-alt,&:hover .fa-list-ul,&:hover .fa-store{
+          color:#9356dc;
+        }
+        @include lg{
+          padding:4% 4% 4% 9%;
+        }
+        @include md{
+          padding:4% 4% 4% 9%;
+        }
+        }
+      &_number{
+        margin-left: -5%;
+        border: 2px solid #9356dc;
+        border-radius: 50%;
+        padding: 0% 0.8% 0% 0.8%;
+        background-color: #9356dc;
+        color: white;
+        height: 1.7rem;
+        width: 1.4rem;
+        font-size: 11px;
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        @include md{
+          font-size: 17px;
+          height: 1.7rem;
+          width: 1.4rem;
+        }
+        @include lg{
+          font-size: 17px;
+          height: 1.7rem;
+          width: 1.4rem;
+        }
+        }
+  }
+
+  .fa-heart.grey
+  {
+    position:relative;
+    float:right;
+    margin-right: 8%;
+    margin-top: 7%;
+    margin-left:0%;
+    font-size: 22px;
+    @include md{
+      margin-top:5%;
+      font-size: 20px;
+    }
+    @include lg{
+      font-size:27px;
+      margin-top: 6%;
+      margin-left: 90%;
+      position: absolute;
+    }
+    }
+  
+  .fa-heart.full
+  {
+    display:none;
+    height:100%;
+    float: right;  
+  }
+
+  .fa-heart.grey:hover
+  {
+    animation: slideheart 1s ease-in 0s forwards;
+    -webkit-animation:slideheart 1s ease-in 0s forwards ;
+  }
+
+  .fa-heart.grey:hover .fa-heart.full
+  {
+    float: right;
+    display:flex;
+    position:absolute;
+    animation: slide 1s ease-in 0s forwards;
+    -webkit-animation:slide 1s ease-in 0s forwards ;
+    z-index: 1;
+    width:100%;
+    background: -webkit-linear-gradient(#ea72da,#a75cdc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-left: -5%;
+    margin-top: -100%;
+    font-size: 22px;
+    @include md{
+      font-size: 20px;
+    }
+    @include lg{
+      font-size: 27px;
+    }
+
+   }
+  
+  .fa-mobile-alt,.fa-list-ul,.fa-store
+  {
+    margin-right: $margin-right;
+    padding-top: 2%;
+    color:grey;
+    font-size:14px;
+    @include md{
+      font-size:20px;
+    }
+  }
+
+    /**Animation remplissage coeur**/
+
+  .fa-heart
+  {
+    position:relative;
+    margin-left: 90%;
+    margin-top: 8%; 
+    font-size:22px;
+    cursor: pointer;
+    @include md{
+      font-size:20px;
+    }
+    @include lg{
+      margin-left: 90%;
+      margin-top: 9%; 
+      font-size:27px;   
+    }
+  }
+
+  .heart 
+  {
+    margin-top: -15%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @include md{
+      margin-top: -12%;
+      }
+    @include lg{
+    margin-top: -10%;
+    }
+  }
+  
+  .fa-heart.pink
+  {
+    display:none;
+    height:100%;
+    float: right;  
+  }
+
+  .fa-heart:hover
+  {
+    animation: slideheart 1s ease-in 0s forwards;
+    -webkit-animation:slideheart 1s ease-in 0s forwards ;
+  }
+ 
+  .fa-heart:hover .fa-heart.pink
+  {
+    float: right;
+    display:flex;
+    position:absolute;
+    animation: slide 1s ease-in 0s forwards;
+    -webkit-animation:slide 1s ease-in 0s forwards ;
+    z-index: 1;
+    width:100%;
+    background: -webkit-linear-gradient(#ea72da,#a75cdc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; 
+    margin-left: -2.5%;
+    margin-top: -69%;
+    font-size:24px;
+    @include md{
+    margin-top: -47%;
+    font-size:21.5px;
+    margin-left: -2%;
+    }
+    @include lg{
+    margin-left: 0%;
+    margin-top: -61%;
+    font-size:28.5px; 
+    }
+    @include xl{
+      margin-left: 0%;
+      margin-top: -43%;
+      font-size:28.5px; 
+      }
+
+  }
+  
+  .fa-utensils
+  {
+    margin-right:3%;
+    @include lg{
+      margin-right: 3%;
+    }
+  }
+
+  .fa-hands-helping
+  {
+    margin-right:2%;
+  }
+
+  .fa-map-marker-alt
+  {
+    @include md{
+      font-size: 20px;
+    }
+    @include lg{
+      font-size:22px;
+    }
+  }
+
+  .fa-arrow-left
+  {
+    font-size: 20px;
+    margin-left: 10%;
+    float: left;
+    margin-top: 2%;
+    @include md{
+      margin-left:20%;
+    }
+    @include mdlandscape{
+      margin-left:29%;
+      margin-top: 0.6%;
+    }
+    @include lg{
+      margin-left: 20%;
+      margin-top: 1%;
+    }
+  }
+  

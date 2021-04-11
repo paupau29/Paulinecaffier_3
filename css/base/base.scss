@@ -1,119 +1,69 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap');
 
 body
 {
-    margin:none;
+    margin:0%;
     font-family:'Roboto',sans-serif;
-
-    @include md{
-        margin:0% 10% 0% 10%;
+    @include mdlandscape{
+      margin:0%;
     }
     @include lg{
         margin:0% 10% 0% 10%;
     }
 }
+
 .marge
 {
-      max-width: 768px;
-      @include lg{
-          max-width: 1024px;
-      }
+  margin:0%;
+  @include lg{
+    margin-left:0%;
+  }
 }
 
-.logo{
+.logo
+{
     text-align: center; 
     @include lg{
-      margin-left: -3%;
+    margin-left: -3%;
     }
 }
-.logomenu{
+
+.logomenu
+{
     margin-left: 25%;
+    width:200px;
     @include lg{
-        margin-left: 40%;
+      margin-left: 40%;
       }
-      @include md{
-        margin-left: 40%;
+    @include md{
+      margin-left: 40%;
+      }
+    @include mdlandscape{
+      margin-left: 42%;
       }
 }
-.logo_bis{
+
+.logo_bis
+{
+  color: white;
+  font-family:'shrikhand',sans-serif;
   text-align: left;  
-  margin-left: 10%;
+  margin-left: 12%;
+  font-size: 3.5vw;
+  @include md{
+    margin-left: 7%;
+    font-size:3vw; 
+  }
+  @include mdlandscape{
+    margin-left: 7%;
+    font-size:2.5vw; 
+  }
+  @include lg{
+    font-size:2vw;
+    margin-left: 4%;
+  }
 }
-h1
-{
-    font-size:$font-size+2vw;
-    text-align: center;
-    font-family:'shrikhand',sans-serif;
 
-    @include md{
-        font-size: 4vw;
-    }
-    @include lg{
-        font-size:3vw;
-    }
-}
-h2
-{
-    text-align: center;
-    font-weight: normal;
-    font-size:$font-size+1vw;
-    @include md{
-        font-size: 3vw;
-    }
-    @include lg{
-        font-size:2vw;
-    }
 
-}
-h3
-{
-    text-align: left;
-    font-weight: bold;
-    font-size:$font-size+1vw;
-    margin-left: 5%;
-    @include md{
-        font-size: 3vw;
-    }
-    @include lg{
-        font-size: 2.5vw;
-    }
-}
-strong
-{
-    font-size: $font-size;
-    line-height: 150%;
-    @include md{
-        font-size: 2.5vw;
-    }
-    @include lg{
-        font-size:1.5vw;
-    }
-}
-.menutitle{
-    text-align: left;
-    border-bottom: 1px solid #99e2d0;
-    width:18%;
-    border-bottom-width:medium;
-    padding-bottom: 3%;
-    margin-left: 10%;
-    font-size: 4vw;
-    color:grey;
-    @include md{
-        font-size: 2vw;
-    }
-    @include lg{
-        font-size:1.5vw;
-    }
-}
-.h1menu{
-    margin-left: -20%;
-    font-family:'shrikhand',sans-serif;
-    @include md{
-        font-size: 3vw;
-    }
-    @include lg{
-        font-size: 3vw;
-        margin-left: -35%;
-    }
-}
+

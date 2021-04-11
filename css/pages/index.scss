@@ -1,116 +1,88 @@
 
-.localisation{
-width:100%;
+.localisation
+{
 display:flex;
 justify-content: center;
 padding-top: $padding-top+1%;
 flex-direction: row;
 }
-.fa-mobile-alt,.fa-list-ul,.fa-store{
-  margin-right: $margin-right;
-  padding-top: 2%;
-  color:grey;
-  font-size:20px;
-  @include md{
-    font-size:25px;
-  }
-}
-.fa-heart{
-  float:right;
-  padding-top:$padding-top;
-}
-.fa-heart::before {
-  content: "\f004";
-  transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-  background: -webkit-linear-gradient(#ea72da,#a75cdc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  cursor: pointer;
-}
-.fa-utensils{
-  margin-right:$margin-right+1;
-}
-.fa-hands-helping{
-  margin-right:2%;
-}
-.fa-map-marker-alt{
-  @include md{
-    font-size: 20px;
-  }
-  @include lg{
-    font-size:22px;
-  }
 
-}
-.fa-arrow-left{
-  font-size: 20px;
-  margin-left: 10%;
-  float: left;
-  margin-top: 2%;
-  @include lg{
-    margin-left: 20%;
-    margin-top: 1%;
-  }
-  @include md{
-    margin-left: 20%;
-  }
-}
-.fa-check-circle{
-  color:#95e8ca;
-  background-color: white;
-  border-radius: 50%;
-  border: 0px #95e8ca;
-}
-.picture{
+.picture
+{
   object-fit: cover;
   width: 325px;
   height:159px;
   border-radius:15px 15px 0px 0px;
   @include md{
     width:450px;
-    height:20Opx;
+    height:200px;
   }
-  @include lg{
+
+  @include lg
+  {
+    width:440px;
+    height:160px; 
+  }
+
+  @include xl
+  {
     width:600px;
-    height:280px; 
+    height:200px; 
   }
 }
-figure{
+
+figure
+{
   display:flex;
   flex-direction: column;
   justify-content: center;
   width:325px;
   margin-bottom:5%;
+  margin-left: 7%;
   border: 2px grey;
   border-radius: 15px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-  margin-left: 5%;
   @include md {
   width:450px;
-  margin-left: 13%;
+  margin-left: 14%;
+  }
+  @include mdlandscape{
+    margin-left:24%; 
   }
   @include lg{
     margin-left: 20%;
+    width:440px;
+    margin:0% 3% 3% 0%;
+  }
+  @include xl{
+    margin-left: 20%;
     width:600px;
+    margin:6% 6% 6% 2%;
   }
 }
+
 .pict_bis{
-  max-width:100%;
+  object-fit: cover;
+  width: 375px;
+  margin: 0%;
   @include md{
-    width:500px;
-    margin-left: 17%;
+    width:100%;
   }
   @include lg{
-    width:650px;
+    width:1000px;
+    margin-left: 0%;
+  }
+  @include xl{
+    width:1400px;
+    margin-left: 4%;
   }
 }
-figcaption{
+
+figcaption
+{
 text-align: left;
 margin-left: 1%;
-font-size: $font-size;
+font-size: 4vw;
 padding:4%;
 @include md{
   font-size:2vw;
@@ -119,11 +91,22 @@ padding:4%;
   font-size:1.5vw;
 }
 }
-.mail{
+
+.mail
+{
   text-decoration:none;
   color:white;
   cursor: pointer;
 }
+
+.legend
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 
 
 
