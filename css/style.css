@@ -1283,6 +1283,7 @@ li {
   margin-left: 10%;
   float: left;
   margin-top: 2%;
+  color: black;
 }
 @media (min-width: 768px) {
   .fa-arrow-left {
