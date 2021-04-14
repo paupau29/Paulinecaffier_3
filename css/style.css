@@ -48,6 +48,16 @@ body {
 .marge {
   margin: 0%;
 }
+@media (min-width: 667px) {
+  .marge {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 768px) {
+  .marge {
+    margin-left: 0%;
+  }
+}
 @media (min-width: 1025px) {
   .marge {
     margin-left: 0%;
@@ -67,9 +77,9 @@ body {
   margin-left: 25%;
   width: 200px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 667px) {
   .logomenu {
-    margin-left: 40%;
+    margin-left: 20%;
   }
 }
 @media (min-width: 768px) {
@@ -80,6 +90,11 @@ body {
 @media (min-width: 900px) {
   .logomenu {
     margin-left: 42%;
+  }
+}
+@media (min-width: 1025px) {
+  .logomenu {
+    margin-left: 40%;
   }
 }
 
@@ -151,6 +166,11 @@ figure {
   border: 2px grey;
   border-radius: 15px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+}
+@media (min-width: 667px) {
+  figure {
+    margin-left: 22%;
+  }
 }
 @media (min-width: 768px) {
   figure {
@@ -252,6 +272,11 @@ h1 {
   font-size: 6vw;
   margin-left: 7%;
   font-size: 5vw;
+}
+@media (min-width: 667px) {
+  .bold {
+    margin-left: 22%;
+  }
 }
 @media (min-width: 768px) {
   .bold {
@@ -463,6 +488,13 @@ h2 {
   margin-bottom: 17%;
   box-shadow: none;
 }
+@media (min-width: 667px) {
+  .menu_button {
+    font-size: 2.5vw;
+    margin-left: 12%;
+    padding: 3%;
+  }
+}
 @media (min-width: 768px) {
   .menu_button {
     font-size: 2.5vw;
@@ -470,6 +502,7 @@ h2 {
     margin-top: 5%;
     margin-bottom: 5%;
     border: 0;
+    margin-left: 25%;
   }
 }
 @media (min-width: 900px) {
@@ -519,6 +552,14 @@ input {
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
+}
+@media (min-width: 667px) {
+  .nouveau {
+    padding: 1%;
+    margin-left: 28%;
+    font-size: 2vw;
+    margin-top: -29%;
+  }
 }
 @media (min-width: 768px) {
   .nouveau {
@@ -570,6 +611,16 @@ input {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media (min-width: 667px) {
+  .menu_text strong {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 768px) {
+  .menu_text strong {
+    font-size: 1.125em;
+  }
+}
 @media (min-width: 900px) {
   .menu_text strong {
     font-size: 0.8em;
@@ -587,6 +638,16 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+@media (min-width: 667px) {
+  .menu_text span {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 768px) {
+  .menu_text span {
+    font-size: 1.18em;
+  }
 }
 @media (min-width: 900px) {
   .menu_text span {
@@ -622,9 +683,15 @@ input {
   font-weight: 600;
   margin-right: -45px;
 }
+@media (min-width: 667px) {
+  .menu_price span {
+    font-size: 0.8em;
+  }
+}
 @media (min-width: 768px) {
   .menu_price span {
     margin-right: -120px;
+    font-size: 1em;
   }
 }
 @media (min-width: 900px) {
@@ -654,6 +721,11 @@ input {
   font-size: 6.8vw;
   margin-top: -17%;
   transition: transform 400ms ease-out;
+}
+@media (min-width: 667px) {
+  .menu_check {
+    font-size: 4vw;
+  }
 }
 @media (min-width: 768px) {
   .menu_check {
@@ -970,9 +1042,19 @@ footer {
   padding-bottom: 5%;
   padding-top: 5%;
 }
+@media (min-width: 667px) {
+  footer {
+    margin-left: -25%;
+    padding-left: 25%;
+    padding-bottom: 10%;
+  }
+}
 @media (min-width: 768px) {
   footer {
     padding-left: 24%;
+    margin-right: 0%;
+    padding-bottom: 5%;
+    margin-left: 0%;
   }
 }
 @media (min-width: 900px) {

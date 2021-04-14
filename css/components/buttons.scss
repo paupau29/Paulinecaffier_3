@@ -53,12 +53,18 @@
     margin-top: 6%;
     margin-bottom: 17%;
     box-shadow: none;
+    @include smportrait{
+      font-size:2.5vw;
+      margin-left:12%;
+      padding:3%;
+    }
     @include md{
     font-size: 2.5vw;
     padding:3%;
     margin-top: 5%;
     margin-bottom: 5%;
     border:0;
+    margin-left: 25%;
     }
     @include mdlandscape{
       font-size: 2vw;
@@ -102,6 +108,12 @@
     text-align: center;
     font-size: 3vw;
     font-weight:bold;
+    @include smportrait{
+      padding:1%;
+      margin-left:28%;
+      font-size:2vw;
+      margin-top:-29%;
+    }
     @include md{
       margin-left:44%;
       margin-top:-22%;
@@ -142,6 +154,12 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      @include smportrait{
+        font-size:0.8em
+      }
+      @include md{
+        font-size: 1.125em;  
+      }
       @include mdlandscape{
         font-size: 0.8em;
       }
@@ -156,6 +174,12 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      @include smportrait{
+        font-size:0.7em;
+      }
+      @include md{
+        font-size:1.18em;
+      }
       @include mdlandscape{
         font-size: 0.7em;
       }
@@ -183,8 +207,12 @@
       font-size: 1em;
       font-weight: 600;
       margin-right: -45px;
+      @include smportrait{
+        font-size:0.8em;
+      }
       @include md{
         margin-right: -120px;
+        font-size: 1em;
       }
       @include mdlandscape{
         font-size: 0.8em; 
@@ -212,6 +240,9 @@
     font-size: 6.8vw;
     margin-top:-17%;
   transition: transform 400ms ease-out;
+  @include smportrait{
+    font-size:4vw;
+  }
   @include md{
     margin-top:-14%;
     padding:6.2%;

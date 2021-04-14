@@ -8,10 +8,19 @@ $color2:#a75cdc;
 // §breakpoints: (
 
 $screen-sm-min: 375px;
+$screen-sm-min-portrait: 667px;
 $screen-md-min:768px;
 $screen-md-min-landscape:900px;
 $screen-lg-min:1025px;
 $screen-xl-min:1400px;
+
+
+@mixin smportrait
+{
+    @media (min-width: #{$screen-sm-min-portrait}) {
+        @content;
+    }  
+}
 
 @mixin md 
 {
