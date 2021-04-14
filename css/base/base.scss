@@ -16,9 +16,15 @@ body
 .marge
 {
   margin:0%;
-  @include lg{
+  @include smportrait{
+    margin-left: 20%;
+  }
+  @include md{
     margin-left:0%;
   }
+  @include lg{
+    margin-left:0%;
+  } 
 }
 
 .logo
@@ -33,14 +39,17 @@ body
 {
     margin-left: 25%;
     width:200px;
-    @include lg{
-      margin-left: 40%;
-      }
+    @include smportrait{
+      margin-left:20%;
+    }
     @include md{
       margin-left: 40%;
       }
     @include mdlandscape{
       margin-left: 42%;
+      } 
+    @include lg{
+      margin-left: 40%;
       }
 }
 
